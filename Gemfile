@@ -44,3 +44,4 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 gem "spring", group: :development
+gem "pry", group: [:development, :test]
