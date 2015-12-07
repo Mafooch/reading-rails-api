@@ -14,6 +14,7 @@ class ActiveSupport::TestCase
 
   # Add more helper methods to be used by all tests here...
   def json(body)
-    JSON.parse(body)
+    JSON.parse(body, symbolize_names: true)
+    # allow keys to be returned as symbols
   end
 end
